@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A little something for you 💌</title>
+<!-- Quicksand font (falls back to system fonts if offline) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="particles" aria-hidden="true"></div>
+<div id="confetti" aria-hidden="true"></div>
+
+<main>
+
+  <!-- OPENING SCREEN -->
+  <section class="section fade" id="intro">
+    <div class="card">
+      <div class="envelope" aria-hidden="true">💌</div>
+      <h1 style="margin: 14px 0 24px;">Hey... I have something to tell you.</h1>
+      <button class="btn-main" id="openBtn">Open this 💌</button>
+    </div>
+  </section>
+
+  <!-- CONFESSION -->
+  <section class="section fade" id="confession" hidden>
+    <p class="lead">There's something I've been wanting to tell you for a while...</p>
+    <div class="card message" id="message" title="Tap to skip the typing"></div>
+  </section>
+
+  <!-- COFFEE QUESTION -->
+  <section class="section fade" id="askSection" hidden>
+    <p class="lead">So... I have one question.</p>
+    <div class="card" id="askCard" hidden>
+      <p class="question">Would you like to go out and grab a coffee? ☕❤️</p>
+      <div class="btn-row">
+        <button class="btn-main" id="yesBtn">Yes ❤️</button>
+        <button class="btn-soft" id="noBtn">No</button>
+      </div>
+      <!-- Replies appear here -->
+      <div id="reply" style="margin-top: 26px;" aria-live="polite">
+        <p class="question" id="yesReply1" hidden>You just made me really happy. ❤️</p>
+        <p class="question" id="yesReply2" hidden style="margin-top: 10px; color: var(--pink-deep);">Coffee date it is! ☕❤️</p>
+        <p class="question" id="noReply" hidden style="font-size: 1.2rem;">That's okay. Thank you for being honest with me. ❤️</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL SECTION -->
+  <section class="section compact fade" id="final" hidden>
+    <p class="lead">Whatever your answer is, thank you for taking the time to read this. ❤️</p>
+    <p class="signature">— Neoky</p>
+    <p class="ps">P.S. Sana between us lang muna 'to ha 😭🤞 Please don't share this around. ❤️</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
